@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_CLog</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//找到PreProcessor Macros 这个属性，对于 Debug 配置我们给他写上 DEBUG，而在 Release 配置中把它留空。
+#ifdef DEBUGLOG
+#define CLog(format, ...) NSLog(@"%s: %@",__PRETTY_FUNCTION__,[NSString stringWithFormat:format,## __VA_ARGS__])
+#else
+#define CLog(format, ...)
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CE9839D2-D7C4-4F7A-A413-3D2A9811818B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CLog 定义</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CLog 定义</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
