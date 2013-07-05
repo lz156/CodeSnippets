@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_MoveAnimation</string>
+	<string>tq_timer</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)moveToPoint:(UIView*)sender pos:(CGPoint)pos dur:(float)dur targe:(id)targe sel:(SEL)sel
-{
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:dur];
-    [UIView setAnimationDelegate:targe];
-    [UIView setAnimationDidStopSelector:sel];// @selector(movePosStop:finished: context:)
-	sender.center=pos;
-    [UIView commitAnimations];
-}</string>
+	<string>// 创建
+self.&lt;#var#&gt; = [NSTimer scheduledTimerWithTimeInterval:1.5
+                                                            target:self
+                                              selector:@selector(&lt;#timerMethod#&gt;)
+                                                          userInfo:nil
+                                                           repeats:YES];
+// 取消
+[self.&lt;#var#&gt; invalidate];
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF8B7ABC-7F36-4F0E-BC2C-9CCAE34D561C</string>
+	<string>C2DF7BF7-EF10-4F82-A9D3-D0E9C0991E9E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>移动动画</string>
+	<string>tq_timer</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Move Animation</string>
+	<string>tq_timer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
