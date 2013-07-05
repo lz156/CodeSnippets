@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_ScreenShot</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+(UIImage*)screenShot:(UIView*)aView
+{
+    //支持retina高分的关键
+    if (NULL != UIGraphicsBeginImageContextWithOptions)
+    {
+        UIGraphicsBeginImageContextWithOptions(aView.frame.size, NO, 0.0);// 使用非1值似乎截图分辨率部队
+    }else
+    {
+        UIGraphicsBeginImageContext(aView.frame.size);
+    }
+    
+    [aView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+        
+    return image;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>07D9F47D-E323-4739-A4E1-6918E172CAE0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>屏幕截图</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ScreenShot</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
