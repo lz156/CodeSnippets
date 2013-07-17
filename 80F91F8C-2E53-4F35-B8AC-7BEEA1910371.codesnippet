@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dox</string>
+	<string>MCS_checkNetwork</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- *
- */</string>
+	<string>+ (BOOL)isNetworkReachableViaWWANOrWiFI
+{
+	return (![[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == kNotReachable);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>48DE1D79-02B2-47AC-9046-25DD6AF3ED6D</string>
+	<string>80F91F8C-2E53-4F35-B8AC-7BEEA1910371</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>判断是否有网络</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ELC Comment</string>
+	<string>CheckNetwork</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
