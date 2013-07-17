@@ -3,27 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_button</string>
+	<string>MCS_tableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(10, 10, 80, 40);
-    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];</string>
+	<string> UITableView *tablView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, 320, 400) style:UITableViewStylePlain];
+    tablView.dataSource = self;
+    tablView.delegate   = self;
+    [self.view addSubview:tablView];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F741EEA9-8E94-4F69-B9B2-754F49747060</string>
+	<string>E6B1006F-9444-4663-8DE8-96643E40302C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>button 初始化</string>
+	<string>tableview 代码创建</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>button create</string>
+	<string>MCS_tableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
