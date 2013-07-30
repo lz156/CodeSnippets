@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_tableViewDataSource</string>
+	<string>MCS_tbVDataSource</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark-UITableViewDataSource
+	<string>
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 40.0;
@@ -52,10 +52,10 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>tableView 数据委托</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MCS_tableViewDataSource</string>
+	<string>MCS_tbVDataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
