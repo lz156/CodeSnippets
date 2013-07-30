@@ -6,10 +6,11 @@
 	<string>MCS_tableViewDataSource</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark-UITableViewDataSource
+	<string>
+ #pragma mark-UITableViewDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 40.0;
@@ -44,7 +45,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F101EF38-BA84-4915-89B8-CC89DB5408B0</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -56,6 +58,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_tableView</string>
+	<string>MCS_scrollView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> UITableView *tablView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, 320, 400) style:UITableViewStylePlain];
-    tablView.dataSource = self;
-    tablView.delegate   = self;
-    [self.view addSubview:tablView];</string>
+	<string>    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:rect];
+    scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    scrollView.showsVerticalScrollIndicator = YES;
+    [self.view addSubview:scrollView];
+    [scrollView release];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E6B1006F-9444-4663-8DE8-96643E40302C</string>
+	<string>60BD9AD6-82D1-4934-B4F2-1FB0421D717D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableview 代码创建</string>
+	<string>scrollView 初始化</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MCS_tableView</string>
+	<string>MCS_scrollView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

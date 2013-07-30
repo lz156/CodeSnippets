@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_tableView</string>
+	<string>MCS_*</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> UITableView *tablView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, 320, 400) style:UITableViewStylePlain];
-    tablView.dataSource = self;
-    tablView.delegate   = self;
-    [self.view addSubview:tablView];</string>
+	<string>/********************************    **********************************/</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E6B1006F-9444-4663-8DE8-96643E40302C</string>
+	<string>778FBDD2-AEF0-4B86-A2B4-3F4831CDB8AF</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableview 代码创建</string>
+	<string>*提示</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MCS_tableView</string>
+	<string>MCS_*</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

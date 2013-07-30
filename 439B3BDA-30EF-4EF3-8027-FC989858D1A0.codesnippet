@@ -3,24 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_tableView</string>
+	<string>MCS_textView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> UITableView *tablView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, 320, 400) style:UITableViewStylePlain];
-    tablView.dataSource = self;
-    tablView.delegate   = self;
-    [self.view addSubview:tablView];</string>
+	<string>    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 160, 300, 120)];
+    textView.backgroundColor = [UIColor whiteColor];
+    textView.delegate = self;
+    textView.showsVerticalScrollIndicator = NO;
+    textView.scrollEnabled = NO;
+    [vBg addSubview:textView];
+    [textView release];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E6B1006F-9444-4663-8DE8-96643E40302C</string>
+	<string>439B3BDA-30EF-4EF3-8027-FC989858D1A0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableview 代码创建</string>
+	<string>textView 初始化</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MCS_tableView</string>
+	<string>MCS_textView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
