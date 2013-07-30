@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_mapViewDelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &lt;MKAnnotation&gt;)annotation
+{
+    // in case it's the user location, we already have an annotation, so just return nil
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+    {
+        return nil;
+    }
+    
+    // handle our three custom annotations
+    //
+    if ([annotation isKindOfClass:[BridgeAnnotation class]]) // for Golden Gate Bridge
+    {
+        // try to dequeue an existing pin view first
+        static NSString *BridgeAnnotationIdentifier = @"bridgeAnnotationIdentifier";
+        
+        MKPinAnnotationView *pinView =
+            (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:BridgeAnnotationIdentifier];
+        if (pinView == nil)
+        {
+            // if an existing pin view was not available, create one
+            MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc]
+                                             initWithAnnotation:annotation reuseIdentifier:BridgeAnnotationIdentifier];
+            customPinView.pinColor = MKPinAnnotationColorPurple;
+            customPinView.animatesDrop = YES;
+            customPinView.canShowCallout = YES;
+            
+            // add a detail disclosure button to the callout which will open a new view controller page
+            //
+            // note: when the detail disclosure button is tapped, we respond to it via:
+            //       calloutAccessoryControlTapped delegate method
+            //
+            // by using "calloutAccessoryControlTapped", it's a convenient way to find out which annotation was tapped
+            //
+            UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+            customPinView.rightCalloutAccessoryView = rightButton;
+
+            return customPinView;
+        }
+        else
+        {
+            pinView.annotation = annotation;
+        }
+        return pinView;
+    }
+    else if ([annotation isKindOfClass:[SFAnnotation class]])   // for City of San Francisco
+    {
+        static NSString *SFAnnotationIdentifier = @"SFAnnotationIdentifier";
+        
+        MKAnnotationView *flagAnnotationView =
+            [self.mapView dequeueReusableAnnotationViewWithIdentifier:SFAnnotationIdentifier];
+        if (flagAnnotationView == nil)
+        {
+            MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
+                                                                             reuseIdentifier:SFAnnotationIdentifier];
+            annotationView.canShowCallout = YES;
+           
+            UIImage *flagImage = [UIImage imageNamed:@"flag.png"];
+            
+            // size the flag down to the appropriate size
+            CGRect resizeRect;
+            resizeRect.size = flagImage.size;
+            CGSize maxSize = CGRectInset(self.view.bounds,
+                                         [MapViewController annotationPadding],
+                                         [MapViewController annotationPadding]).size;
+            maxSize.height -= self.navigationController.navigationBar.frame.size.height + [MapViewController calloutHeight];
+            if (resizeRect.size.width &gt; maxSize.width)
+                resizeRect.size = CGSizeMake(maxSize.width, resizeRect.size.height / resizeRect.size.width * maxSize.width);
+            if (resizeRect.size.height &gt; maxSize.height)
+                resizeRect.size = CGSizeMake(resizeRect.size.width / resizeRect.size.height * maxSize.height, maxSize.height);
+            
+            resizeRect.origin = CGPointMake(0.0, 0.0);
+            UIGraphicsBeginImageContext(resizeRect.size);
+            [flagImage drawInRect:resizeRect];
+            UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            annotationView.image = resizedImage;
+            annotationView.opaque = NO;
+             
+            UIImageView *sfIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SFIcon.png"]];
+            annotationView.leftCalloutAccessoryView = sfIconView;
+            
+            // offset the flag annotation so that the flag pole rests on the map coordinate
+            annotationView.centerOffset = CGPointMake( annotationView.centerOffset.x + annotationView.image.size.width/2, annotationView.centerOffset.y - annotationView.image.size.height/2 );
+            
+            return annotationView;
+        }
+        else
+        {
+            flagAnnotationView.annotation = annotation;
+        }
+        return flagAnnotationView;
+    }
+    else if ([annotation isKindOfClass:[CustomMapItem class]])  // for Japanese Tea Garden
+    {
+        static NSString *TeaGardenAnnotationIdentifier = @"TeaGardenAnnotationIdentifier";
+        
+        CustomAnnotationView *annotationView =
+        (CustomAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:TeaGardenAnnotationIdentifier];
+        if (annotationView == nil)
+        {
+            annotationView = [[CustomAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:TeaGardenAnnotationIdentifier];
+        }
+        return annotationView;
+    }
+    
+    return nil;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>43A80056-2A5B-49AC-ADF0-845EAC54902B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mapview 委托</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_mapViewDelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_rotateAnimate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (void)rotateAnimationSender:(UIView*)sender;
+{
+    [sender.layer removeAllAnimations];
+    CABasicAnimation *rotateAnimation = [CABasicAnimation animation];
+    rotateAnimation.keyPath = @"transform.rotation.z";
+    rotateAnimation.fromValue = [NSNumber numberWithFloat:M_PI / 180.0f*0];
+    rotateAnimation.toValue = [NSNumber numberWithFloat:180.0*10];
+    rotateAnimation.duration = 300;
+    rotateAnimation.removedOnCompletion = NO;
+    // leaves presentation layer in final state; preventing snap-back to original state
+    rotateAnimation.fillMode = kCAFillModeBoth; //kCAFillModeForwards//kCAMediaTimingFunctionEaseInEaseOut
+    //rotateAnimation.repeatCount =MAXFLOAT;//0 kCAMediaTimingFunctionLinear
+    //rotateAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    // add the animation to the selection layer. This causes it to begin animating.
+    [sender.layer addAnimation:rotateAnimation forKey:@"animateLayer"];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7D95F0ED-3A9C-4906-8C52-5785EDD56857</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>无限旋转动画</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_rotateAnimate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

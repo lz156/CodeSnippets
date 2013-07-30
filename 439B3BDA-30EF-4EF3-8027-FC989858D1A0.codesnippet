@@ -3,21 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dox</string>
+	<string>MCS_textView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- *
- */</string>
+	<string>    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 160, 300, 120)];
+    textView.backgroundColor = [UIColor whiteColor];
+    textView.delegate = self;
+    textView.showsVerticalScrollIndicator = NO;
+    textView.scrollEnabled = NO;
+    [vBg addSubview:textView];
+    [textView release];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>48DE1D79-02B2-47AC-9046-25DD6AF3ED6D</string>
+	<string>439B3BDA-30EF-4EF3-8027-FC989858D1A0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>textView 初始化</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ELC Comment</string>
+	<string>MCS_textView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
