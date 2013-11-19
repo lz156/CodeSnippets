@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>        
-        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(80+160, 44, 80, 60)];
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,21)];
         lbl.backgroundColor = [UIColor clearColor];
         lbl.textColor       = [UIColor whiteColor];
         lbl.textAlignment   = UITextAlignmentCenter;
