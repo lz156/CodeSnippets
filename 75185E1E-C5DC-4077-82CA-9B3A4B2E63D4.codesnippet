@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_textFiled</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(60, 100+i*30, 200, 21)];
+            textField.borderStyle = UITextBorderStyleRoundedRect;
+            textField.delegate = self;
+            [vBg addSubview:textField];
+            [textField release];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>75185E1E-C5DC-4077-82CA-9B3A4B2E63D4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_textFiled</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

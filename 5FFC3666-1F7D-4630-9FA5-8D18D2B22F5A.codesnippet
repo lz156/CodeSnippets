@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_postEmail</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+#pragma mark - post email
+- (void)sendEmail
+{
+    if([MFMailComposeViewController canSendMail])
+		[self displayComposerSheet];
+	else
+		[self launchMailAppOnDevice];
+}
+
+#pragma mark -
+#pragma mark Email methods
+- (void) displayComposerSheet{
+	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+	picker.mailComposeDelegate = self;
+	
+    //    NSData *data = UIImageJPEGRepresentation(self.imageShot, 0.5);
+    //
+    //    [picker addAttachmentData:data mimeType:@"image/png" fileName:@"My pic"];
+    
+    //[picker setSubject:@"有福同享"];
+    NSString *title = @"TV";
+    [picker setSubject:title];
+    [picker setToRecipients:nil];
+    
+	
+	/*
+     NSMutableString *emailBody = nil;
+     if (isReportContent) {
+     
+     emailBody =[NSMutableString stringWithFormat:@"%@\n%@\n",[location objectForAttributeWithName:hgLocationID],[location objectForAttributeWithName:hgLocationName]];   // WebSite: Phone:";
+     if ([location objectForAttributeWithName:hgLocationStreet]!=NULL ) {
+     [emailBody appendString:[NSString stringWithFormat:@"%@\n",[location objectForAttributeWithName:hgLocationStreet]]];
+     }
+     if ([location objectForAttributeWithName:hgLocationCity]!=NULL ) {
+     [emailBody appendString:[NSString stringWithFormat:@"%@\n",[location objectForAttributeWithName:hgLocationCity]]];
+     }
+     
+     [emailBody appendString:[NSString stringWithFormat:@"www.wearehungry.de"]];
+     }
+     else {
+     
+     emailBody =[NSMutableString stringWithFormat:@"Grabbing some food at:\n%@\n",[location objectForAttributeWithName:hgLocationName]];   // WebSite: Phone:";
+     if ([location objectForAttributeWithName:hgLocationStreet]!=NULL ) {
+     [emailBody appendString:[NSString stringWithFormat:@"%@\n",[location objectForAttributeWithName:hgLocationStreet]]];
+     }
+     if ([location objectForAttributeWithName:hgLocationCity]!=NULL ) {
+     [emailBody appendString:[NSString stringWithFormat:@"%@\n\n",[location objectForAttributeWithName:hgLocationCity]]];
+     }
+     [emailBody appendString:[NSString stringWithFormat:@"www.wearehungry.de\n"]];
+     [emailBody appendString:[NSString stringWithFormat:@"\n\nGet the app for free:\n\nwww.wearehungry.de"]];
+     
+     }
+     
+     [picker setMessageBody:emailBody isHTML:NO];
+     */
+    
+    NSString *emailBody = @"123";
+    [picker setMessageBody:emailBody isHTML:NO];
+    
+	[self presentModalViewController:picker animated:YES];
+    [picker release];
+}
+
+- (void) launchMailAppOnDevice{
+    NSString *title = @"TV";
+	NSString *recipients = [NSString stringWithFormat:@"mailto:?&amp;subject=%@",title];
+    
+	NSString *body = [NSString stringWithFormat:@"&amp;body=%@",@"123"];
+	
+    
+	NSString *email = [NSString stringWithFormat:@"%@%@", recipients,body];
+	email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
+}
+
+#pragma mark -
+#pragma mark MFMailComposeViewController Delegate
+// Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+	// Notifies users about errors associated with the interface
+	switch (result)
+	{
+		case MFMailComposeResultCancelled:
+			
+			break;
+		case MFMailComposeResultSaved:
+			
+			break;
+		case MFMailComposeResultSent:{
+            
+        }
+            break;
+		case MFMailComposeResultFailed:{
+            
+        }
+			break;
+		default:
+			
+			break;
+	}
+	[self dismissModalViewControllerAnimated:YES];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5FFC3666-1F7D-4630-9FA5-8D18D2B22F5A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>发送邮件</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_postEmail</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
