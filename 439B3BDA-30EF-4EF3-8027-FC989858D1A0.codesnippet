@@ -14,8 +14,8 @@
     textView.delegate = self;
     textView.showsVerticalScrollIndicator = NO;
     textView.scrollEnabled = NO;
-    [vBg addSubview:textView];
-    [textView release];</string>
+    [self.view addSubview:textView];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>439B3BDA-30EF-4EF3-8027-FC989858D1A0</string>
 	<key>IDECodeSnippetLanguage</key>

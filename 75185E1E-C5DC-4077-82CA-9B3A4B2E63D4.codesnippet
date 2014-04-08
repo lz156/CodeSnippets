@@ -9,11 +9,10 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>            UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(60, 100+i*30, 200, 21)];
+	<string>            UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(60, 100, 200, 21)];
             textField.borderStyle = UITextBorderStyleRoundedRect;
             textField.delegate = self;
-            [vBg addSubview:textField];
-            [textField release];</string>
+            [self.view addSubview:textField];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>75185E1E-C5DC-4077-82CA-9B3A4B2E63D4</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -23,6 +22,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
