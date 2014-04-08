@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_Image ResizeImage</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (UIImage*)resizeImage:(UIImage *)image withNewSize:(CGSize)newSize
+{
+
+    UIImage *newImage = nil;
+	
+    if ((image.size.width == newSize.width) &amp;&amp; (image.size.height == newSize.height))
+    {
+        newImage = image;
+    }
+    else
+    {
+        UIGraphicsBeginImageContext(newSize);
+        [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+		
+        newImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        //NSData *jpeg = UIImageJPEGRepresentation(image, 0.8);
+    }
+    return newImage;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FAE592F-2B3E-4101-AB6F-65009606DBA9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>设置图片的大小</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_Image ResizeImage</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
