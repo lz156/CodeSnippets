@@ -11,6 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn.frame = CGRectMake(20, 100, 80, 40);
+    btn.backgroundColor = [UIColor orangeColor];
     [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];</string>
 	<key>IDECodeSnippetIdentifier</key>
