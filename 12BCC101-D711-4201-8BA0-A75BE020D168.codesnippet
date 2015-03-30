@@ -13,6 +13,7 @@
         UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,21)];
         lbl.backgroundColor = [UIColor clearColor];
         lbl.textColor       = [UIColor whiteColor];
+        lbl.font            = [UIFont systemFontOfSize:14];
         lbl.textAlignment   = NSTextAlignmentCenter;
         [self.view addSubview:lbl];</string>
 	<key>IDECodeSnippetIdentifier</key>
