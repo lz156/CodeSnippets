@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_lbl_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var lbl = UILabel(frame:CGRectMake(0, 0, 80, 21)) as UILabel
+            lbl.backgroundColor = UIColor.clearColor();
+            lbl.textColor       = UIColor.blackColor();
+            lbl.textAlignment   = NSTextAlignment.Left;
+            lbl.font            = UIFont.systemFontOfSize(14);
+            self.view.addSubview(lbl);
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2DC1B79-F97F-4E44-84CD-803489A73F6E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>lbl swfit 初始化</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_lbl_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

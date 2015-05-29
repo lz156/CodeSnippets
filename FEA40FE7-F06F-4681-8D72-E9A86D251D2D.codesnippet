@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_txf_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            var textField = UITextField(frame: CGRectMake(0, 0, 80, 21)) as UITextField;
+            textField.borderStyle = UITextBorderStyle.RoundedRect;
+            textField.backgroundColor = UIColor.clearColor();
+            textField.textColor       = UIColor.blackColor();
+            textField.textAlignment   = NSTextAlignment.Left;
+            self.view.addSubview(textField);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FEA40FE7-F06F-4681-8D72-E9A86D251D2D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>textField 初始化</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MCS_txf_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
