@@ -11,9 +11,9 @@
 	<key>IDECodeSnippetContents</key>
 	<string>
 UIImage *image = [UIImage imageNamed:@""];
-UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-imgV.image = image;
-[self.view addSubview:imgV];</string>
+UIImageView *imageView = [[UIImageView alloc] initWithFrame:&lt;#(CGRect)#&gt;];
+imageView.image = image;
+[self.view addSubview:imageView];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>017482EE-7B4C-4D3C-8D72-7EFBBB370005</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> UITableView *tablView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, 320, 400) style:UITableViewStylePlain];
+	<string> UITableView *tablView = [[UITableView alloc] initWithFrame:&lt;#(CGRect)#&gt; style:&lt;#(UITableViewStyle)#&gt;];
     tablView.dataSource = self;
     tablView.delegate   = self;
     [self.view addSubview:tablView];</string>

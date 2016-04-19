@@ -10,11 +10,6 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - UITableView Datasource
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 45.0;
-}
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -40,7 +35,13 @@
 #pragma mark - UITableView Delegate methods
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-}</string>
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.0;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B9E1ED5F-F3D6-4479-A2DF-0C8B21740CD6</string>
 	<key>IDECodeSnippetLanguage</key>

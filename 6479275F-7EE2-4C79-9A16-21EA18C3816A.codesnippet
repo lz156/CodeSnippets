@@ -23,6 +23,8 @@
 	<string>6479275F-7EE2-4C79-9A16-21EA18C3816A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UITextFiled 委托方法</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>MCS_textFieldDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>

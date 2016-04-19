@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>            UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(60, 100, 200, 21)];
+	<string>            UITextField *textField = [[UITextField alloc] initWithFrame:&lt;#(CGRect)#&gt;];
             textField.borderStyle = UITextBorderStyleRoundedRect;
             textField.delegate = self;
             [self.view addSubview:textField];</string>
@@ -17,6 +17,8 @@
 	<string>75185E1E-C5DC-4077-82CA-9B3A4B2E63D4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UITextFiled 初始化</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>MCS_textField</string>
 	<key>IDECodeSnippetUserSnippet</key>

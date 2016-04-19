@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark -UIButton action
-- (void)btnClicked:(UIButton *)btn{
+- (void)buttonClicked:(UIButton *)btn{
 
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

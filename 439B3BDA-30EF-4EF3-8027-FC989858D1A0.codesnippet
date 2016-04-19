@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 160, 300, 120)];
+	<string>    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
     textView.backgroundColor = [UIColor whiteColor];
     textView.delegate = self;
     textView.showsVerticalScrollIndicator = NO;

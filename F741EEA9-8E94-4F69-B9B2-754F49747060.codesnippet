@@ -9,11 +9,11 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(20, 100, 80, 40);
-    btn.backgroundColor = [UIColor orangeColor];
-    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];</string>
+	<string>UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+button.frame = CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;);
+button.backgroundColor = [UIColor orangeColor];
+[button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+[self.view addSubview:button];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F741EEA9-8E94-4F69-B9B2-754F49747060</string>
 	<key>IDECodeSnippetLanguage</key>
