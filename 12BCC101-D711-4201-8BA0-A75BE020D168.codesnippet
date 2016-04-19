@@ -14,7 +14,7 @@ label.backgroundColor = [UIColor clearColor];
 label.textColor       = [UIColor whiteColor];
 label.font            = [UIFont systemFontOfSize:16];
 label.textAlignment   = NSTextAlignmentCenter;
-[self.view addSubview:lbl];</string>
+[self.view addSubview:label];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>12BCC101-D711-4201-8BA0-A75BE020D168</string>
 	<key>IDECodeSnippetLanguage</key>
