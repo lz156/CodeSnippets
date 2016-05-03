@@ -26,9 +26,7 @@
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
-    
+
     return cell;
 }
 
