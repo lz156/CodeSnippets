@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UILabel *label = [[UILabel alloc] initWithFrame:&lt;#(CGRect)#&gt;];
+	<string>UILabel *label = [[UILabel alloc] init];
 label.backgroundColor = [UIColor clearColor];
 label.textColor       = [UIColor whiteColor];
 label.font            = [UIFont systemFontOfSize:16];

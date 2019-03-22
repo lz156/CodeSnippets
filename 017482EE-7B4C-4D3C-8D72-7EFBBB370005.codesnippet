@@ -10,9 +10,9 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>
-UIImage *image = [UIImage imageNamed:@""];
-UIImageView *imageView = [[UIImageView alloc] initWithFrame:&lt;#(CGRect)#&gt;];
-imageView.image = image;
+UIImage *image         = [UIImage imageNamed:@""];
+UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+imageView.contentMode  = UIViewContentModeScaleAspectFit;
 [self.view addSubview:imageView];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>017482EE-7B4C-4D3C-8D72-7EFBBB370005</string>

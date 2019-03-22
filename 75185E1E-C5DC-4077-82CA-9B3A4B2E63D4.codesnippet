@@ -9,10 +9,16 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>            UITextField *textField = [[UITextField alloc] initWithFrame:&lt;#(CGRect)#&gt;];
-            textField.borderStyle = UITextBorderStyleRoundedRect;
-            textField.delegate = self;
-            [self.view addSubview:textField];</string>
+	<string>UITextField *textField    = [[UITextField alloc] init];
+textField.backgroundColor = [UIColor clearColor];
+textField.textColor       = [UIColor blackColor];
+textField.borderStyle     = UITextBorderStyleNone;
+textField.font            = [UIFont systemFontOfSize:16];
+textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+textField.textAlignment   = NSTextAlignmentRight;
+textField.keyboardType    = UIKeyboardTypeNumberPad;
+textField.returnKeyType   = UIReturnKeyDone;
+textField.delegate        = self;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>75185E1E-C5DC-4077-82CA-9B3A4B2E63D4</string>
 	<key>IDECodeSnippetLanguage</key>
