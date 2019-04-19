@@ -1,1 +1,2 @@
-存放位置 ~/Library/Developer/Xcode/UserData/CodeSnippets
+<### mac中codeSnippets路径 ###> 
+~/Library/Developer/Xcode/UserData/CodeSnippets
