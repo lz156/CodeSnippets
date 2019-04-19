@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_sw_label</string>
+	<string>MCS_property_annotation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> let label = UILabel();
-            label.backgroundColor = UIColor.clear;
-            label.textColor       = UIColor.white;
-            label.textAlignment   = NSTextAlignment.left;
-            label.font            = UIFont.systemFont(ofSize: 16);
-            self.view.addSubview(label);</string>
+	<string>/**  */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>010B61DC-BD13-488B-ADDA-9C5ECA1E9A5B</string>
+	<string>7AFBF35A-AFF8-4402-87D8-C0CF5A4AAD3C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_sw_label 创建</string>
+	<string>MCS_property_annotation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift  UILabe 创建</string>
+	<string>属性文档注释</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -19,9 +19,9 @@ imageView.contentMode  = UIViewContentModeScaleAspectFit;
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>imageView初始化</string>
-	<key>IDECodeSnippetTitle</key>
 	<string>MCS_imageView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIImageView创建</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

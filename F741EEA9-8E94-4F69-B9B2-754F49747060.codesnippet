@@ -18,9 +18,9 @@ button.backgroundColor = [UIColor orangeColor];
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>button 初始化</string>
+	<string>MCS_button</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>button create</string>
+	<string>UIButton创建</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

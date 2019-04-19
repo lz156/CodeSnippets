@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_CLog</string>
+	<string>MCS_DLog</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
@@ -11,18 +11,19 @@
 	<key>IDECodeSnippetContents</key>
 	<string>//找到PreProcessor Macros 这个属性，对于 Debug 配置我们给他写上 DEBUG，而在 Release 配置中把它留空。
 #ifdef DEBUG
-#define CLog(format, ...) NSLog(@"%s: %@",__PRETTY_FUNCTION__,[NSString stringWithFormat:format,## __VA_ARGS__])
+#define DLog(format, ...) NSLog(@"%s: %@",__PRETTY_FUNCTION__,[NSString stringWithFormat:format,## __VA_ARGS__])
 #else
-#define CLog(format, ...)
+#define D
+Log(format, ...)
 #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CE9839D2-D7C4-4F7A-A413-3D2A9811818B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>DEBUG状态下测试输出</string>
+	<string>MCS_DLog</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CLog 定义</string>
+	<string>DLog DEBUG状态下测试输出</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

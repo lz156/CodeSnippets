@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_TableViewDatasource delegate</string>
+	<string>MCS_tableViewDatasource delegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -44,6 +44,8 @@
 	<string>B9E1ED5F-F3D6-4479-A2DF-0C8B21740CD6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>MCS_tableViewDatasource delegate</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>MCS_TableViewDatasource delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>

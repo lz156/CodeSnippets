@@ -31,9 +31,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>无限旋转动画</string>
-	<key>IDECodeSnippetTitle</key>
 	<string>MCS_rotateAnimate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>无限旋转动画</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

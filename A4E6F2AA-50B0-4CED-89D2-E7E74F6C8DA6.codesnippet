@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_Code</string>
+	<string>MCS_view_annotation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_Code</string>
+	<string>MCS_view_annotation</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>界面注释</string>
 	<key>IDECodeSnippetUserSnippet</key>

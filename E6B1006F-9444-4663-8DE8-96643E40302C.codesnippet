@@ -26,9 +26,9 @@ else{
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableview 代码创建</string>
-	<key>IDECodeSnippetTitle</key>
 	<string>MCS_tableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITableview代码创建</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

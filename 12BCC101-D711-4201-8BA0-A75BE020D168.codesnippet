@@ -20,9 +20,9 @@ label.textAlignment   = NSTextAlignmentCenter;
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>UILabel创建</string>
-	<key>IDECodeSnippetTitle</key>
 	<string>MCS_label</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UILabel创建</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

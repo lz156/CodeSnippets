@@ -28,9 +28,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>GCD 实现定时器</string>
-	<key>IDECodeSnippetTitle</key>
 	<string>MCS_GCD_Timer</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD 实现定时器</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

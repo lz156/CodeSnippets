@@ -21,9 +21,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>textView 初始化</string>
-	<key>IDECodeSnippetTitle</key>
 	<string>MCS_textView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITextView创建</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

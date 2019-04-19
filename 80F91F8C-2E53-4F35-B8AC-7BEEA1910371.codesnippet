@@ -18,9 +18,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>判断是否有网络</string>
+	<string>MCS_checkNetwork</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CheckNetwork</string>
+	<string>网络检查,判断是否有网络</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
