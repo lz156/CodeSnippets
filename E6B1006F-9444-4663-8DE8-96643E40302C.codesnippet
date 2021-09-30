@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-tableView.separatorStyle  = UITableViewCellSelectionStyleNone;
+tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
 tableView.backgroundColor = [UIColor clearColor];
 tableView.dataSource = self;
 tableView.delegate   = self;

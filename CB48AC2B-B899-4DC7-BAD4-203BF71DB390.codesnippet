@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MCS_button_swfit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let button = UIButton(type: .system);
+        button.backgroundColor = .orange;
+        button.setTitle(&lt;#T##title: String?##String?#&gt;, for: &lt;#T##UIControl.State#&gt;);
+        button.addTarget(&lt;#T##target: Any?##Any?#&gt;, action: &lt;#T##Selector#&gt;, for: &lt;#T##UIControl.Event#&gt;);
+        self.view.addSubview(button);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CB48AC2B-B899-4DC7-BAD4-203BF71DB390</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>MCS_button_swfit</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton创建</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
