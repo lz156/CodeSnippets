@@ -9,8 +9,8 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)moveToPoint:(UIView*)sender pos:(CGPoint)pos dur:(float)dur targe:(id)targe sel:(SEL)sel
-{
+	<string>+ (void)moveToPoint:(UIView*)sender pos:(CGPoint)pos dur:(float)dur targe:(id)targe sel:(SEL)sel{
+    
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:dur];
     [UIView setAnimationDelegate:targe];

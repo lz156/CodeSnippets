@@ -10,12 +10,12 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>//label
-        let label = UILabel.init();
-        label.backgroundColor = .clear;
-        label.textColor       = .white;
-        label.font            = UIFont.systemFont(ofSize: 16);
-        label.textAlignment   = .center;
-        self.view.addSubview(label);</string>
+let label = UILabel.init();
+label.backgroundColor = .clear;
+label.textColor       = .white;
+label.font            = UIFont.systemFont(ofSize: 16);
+label.textAlignment   = .center;
+self.view.addSubview(label);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>093D0DEE-04C2-4A7D-B0FD-34223DE438AA</string>
 	<key>IDECodeSnippetLanguage</key>

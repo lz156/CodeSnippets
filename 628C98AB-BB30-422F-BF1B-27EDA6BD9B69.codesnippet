@@ -3,29 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string></string>
+	<string>MCS_WeakObjc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-        textField.backgroundColor = .clear;
-        textField.textColor       = .black;
-        textField.borderStyle     = .none;
-        textField.font            = UIFont.systemFont(ofSize: 16);
-        textField.clearButtonMode = .whileEditing;
-        textField.textAlignment   = .right;
-        textField.keyboardType    = .default;
-        textField.delegate        = .self;</string>
+	<string>#define WeakObj(o) try{}@finally{} __weak typeof(o) o##Weak = o;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DCBC6930-BA74-43FC-A167-F62C5702B470</string>
+	<string>628C98AB-BB30-422F-BF1B-27EDA6BD9B69</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>MCS_WeakObjc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>@WeakObjc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

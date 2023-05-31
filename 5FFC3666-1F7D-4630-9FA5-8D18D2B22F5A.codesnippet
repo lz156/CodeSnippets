@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_email_post</string>
+	<string>MCS_send_email</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -11,8 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>
 #pragma mark - post email
-- (void)sendEmail
-{
+- (void)sendEmail{
     if([MFMailComposeViewController canSendMail])
 		[self displayComposerSheet];
 	else
@@ -89,8 +88,8 @@
 #pragma mark -
 #pragma mark MFMailComposeViewController Delegate
 // Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-{
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error{
+    
 	// Notifies users about errors associated with the interface
 	switch (result)
 	{
@@ -119,7 +118,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_email_post</string>
+	<string>MCS_send_email</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>邮件发送方法</string>
 	<key>IDECodeSnippetUserSnippet</key>

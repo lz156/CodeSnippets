@@ -9,8 +9,8 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)rotateAnimationSender:(UIView*)sender;
-{
+	<string>+ (void)rotateAnimationSender:(UIView *)sender{
+    
     [sender.layer removeAllAnimations];
     CABasicAnimation *rotateAnimation = [CABasicAnimation animation];
     rotateAnimation.keyPath = @"transform.rotation.z";

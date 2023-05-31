@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_camera</string>
+	<string>MCS_take_camera_and_take_photoLibrary</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)presentCamera
-{
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-    {
+	<string>- (void)presentCamera{
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+        
         UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
         imagePicker.sourceType        = UIImagePickerControllerSourceTypeCamera;
         imagePicker.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
         imagePicker.delegate          = self;
         
-        if (![UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear])
-        {
+        if (![UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]){
             imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
         }
         else{
@@ -30,28 +29,27 @@
     }
 }
 
-- (void)presentPhotoLibrary
-{
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])
-    {
+- (void)presentPhotoLibrary{
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]){
+        
         UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
         imagePicker.sourceType               = UIImagePickerControllerSourceTypePhotoLibrary;
         imagePicker.delegate                 = self;
-        
         [self presentViewController:imagePicker animated:YES completion:nil];
     }
 }
 
 
 #pragma mark- UIImagePickerControllerDelegate
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -59,7 +57,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_camera</string>
+	<string>MCS_take_camera_and_take_photoLibrary</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>拍照的调用</string>
 	<key>IDECodeSnippetUserSnippet</key>

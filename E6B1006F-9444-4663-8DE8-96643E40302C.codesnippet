@@ -12,15 +12,10 @@
 	<string>UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
 tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
 tableView.backgroundColor = [UIColor clearColor];
-tableView.dataSource = self;
-tableView.delegate   = self;
-
-if (@available(iOS 11.0,*)) {
-    tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-}
-else{
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    }</string>
+tableView.dataSource      = self;
+tableView.delegate        = self;
+tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E6B1006F-9444-4663-8DE8-96643E40302C</string>
 	<key>IDECodeSnippetLanguage</key>

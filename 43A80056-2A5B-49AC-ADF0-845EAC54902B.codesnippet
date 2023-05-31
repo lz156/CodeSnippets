@@ -3,31 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_mapViewDelegate</string>
+	<string>MCS_mapView_delegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &lt;MKAnnotation&gt;)annotation
-{
+	<string>- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &lt;MKAnnotation&gt;)annotation{
+    
     // in case it's the user location, we already have an annotation, so just return nil
-    if ([annotation isKindOfClass:[MKUserLocation class]])
-    {
+    if ([annotation isKindOfClass:[MKUserLocation class]]){
+        
         return nil;
     }
     
     // handle our three custom annotations
     //
-    if ([annotation isKindOfClass:[BridgeAnnotation class]]) // for Golden Gate Bridge
-    {
+    if ([annotation isKindOfClass:[BridgeAnnotation class]]){ // for Golden Gate Bridge
         // try to dequeue an existing pin view first
         static NSString *BridgeAnnotationIdentifier = @"bridgeAnnotationIdentifier";
         
         MKPinAnnotationView *pinView =
             (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:BridgeAnnotationIdentifier];
-        if (pinView == nil)
-        {
+        if (pinView == nil){
+            
             // if an existing pin view was not available, create one
             MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc]
                                              initWithAnnotation:annotation reuseIdentifier:BridgeAnnotationIdentifier];
@@ -48,24 +47,23 @@
 
             return customPinView;
         }
-        else
-        {
+        else{
+            
             pinView.annotation = annotation;
         }
         return pinView;
     }
-    else if ([annotation isKindOfClass:[SFAnnotation class]])   // for City of San Francisco
-    {
+    else if ([annotation isKindOfClass:[SFAnnotation class]]){   // for City of San Francisco
+        
         static NSString *SFAnnotationIdentifier = @"SFAnnotationIdentifier";
         
         MKAnnotationView *flagAnnotationView =
             [self.mapView dequeueReusableAnnotationViewWithIdentifier:SFAnnotationIdentifier];
-        if (flagAnnotationView == nil)
-        {
+        if (flagAnnotationView == nil){
+            
             MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
                                                                              reuseIdentifier:SFAnnotationIdentifier];
             annotationView.canShowCallout = YES;
-           
             UIImage *flagImage = [UIImage imageNamed:@"flag.png"];
             
             // size the flag down to the appropriate size
@@ -123,7 +121,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_mapViewDelegate</string>
+	<string>MCS_mapView_delegate</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>MKMapview协议方法</string>
 	<key>IDECodeSnippetUserSnippet</key>

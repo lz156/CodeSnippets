@@ -10,10 +10,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>let button = UIButton(type: .system);
-        button.backgroundColor = .orange;
-        button.setTitle(&lt;#T##title: String?##String?#&gt;, for: &lt;#T##UIControl.State#&gt;);
-        button.addTarget(&lt;#T##target: Any?##Any?#&gt;, action: &lt;#T##Selector#&gt;, for: &lt;#T##UIControl.Event#&gt;);
-        self.view.addSubview(button);</string>
+button.backgroundColor = .orange;
+button.setTitle(&lt;#T##title: String?##String?#&gt;, for: &lt;#T##UIControl.State#&gt;);
+button.addTarget(&lt;#T##target: Any?##Any?#&gt;, action: &lt;#T##Selector#&gt;, for: &lt;#T##UIControl.Event#&gt;);
+self.view.addSubview(button);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CB48AC2B-B899-4DC7-BAD4-203BF71DB390</string>
 	<key>IDECodeSnippetLanguage</key>

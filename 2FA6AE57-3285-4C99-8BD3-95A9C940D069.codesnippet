@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_Image Draw</string>
+	<string>MCS_Image_draw_in_view</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> UIImage *img = [UIImage imageNamed:@"iOS.png"];
-    UIGraphicsBeginImageContext(img.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGContextDrawImage(context,CGRectMake(0,0,img.size.width*0.5,img.size.height*0.5),[img CGImage]);
-    UIImage *newImg = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    [newImg drawInRect:CGRectMake(10,10,img.size.width*0.5,img.size.height*0.5)];</string>
+	<string>UIImage *img = [UIImage imageNamed:@"iOS.png"];
+UIGraphicsBeginImageContext(img.size);
+CGContextRef context = UIGraphicsGetCurrentContext();
+
+CGContextDrawImage(context,CGRectMake(0,0,img.size.width*0.5,img.size.height*0.5),[img CGImage]);
+UIImage *newImg = UIGraphicsGetImageFromCurrentImageContext();
+UIGraphicsEndImageContext();
+[newImg drawInRect:CGRectMake(10,10,img.size.width*0.5,img.size.height*0.5)];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2FA6AE57-3285-4C99-8BD3-95A9C940D069</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_Image Draw</string>
+	<string>MCS_Image_draw_in_view</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>将图片绘制到uiview，在uiview 的drawRect 上操作</string>
 	<key>IDECodeSnippetUserSnippet</key>

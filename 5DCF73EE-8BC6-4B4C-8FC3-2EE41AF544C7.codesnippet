@@ -3,25 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_textField_swift</string>
+	<string>MCS_StrongObjc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        let textField = UITextField.init();
-        textField.borderStyle     = .roundedRect;
-        textField.backgroundColor = .clear;
-        textField.delegate        = self;
-        self.view.addSubview(textField);</string>
+	<string>#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>690BFB4A-4DF6-4441-8DE1-379AEA1BCA99</string>
+	<string>5DCF73EE-8BC6-4B4C-8FC3-2EE41AF544C7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_textField_swift</string>
+	<string>MCS_StrongObjc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MCS_textField_swift</string>
+	<string>MCS_StrongObjc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

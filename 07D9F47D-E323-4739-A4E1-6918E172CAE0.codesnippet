@@ -9,14 +9,13 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+(UIImage*)screenShot:(UIView*)aView
-{
+	<string>+(UIImage*)screenShot:(UIView*)aView{
+    
     //支持retina高分的关键
-    if (NULL != UIGraphicsBeginImageContextWithOptions)
-    {
+    if (NULL != UIGraphicsBeginImageContextWithOptions){
+        
         UIGraphicsBeginImageContextWithOptions(aView.frame.size, NO, 0.0);// 使用非1值似乎截图分辨率部队
-    }else
-    {
+    }else{
         UIGraphicsBeginImageContext(aView.frame.size);
     }
     

@@ -9,8 +9,8 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (BOOL)isNetworkReachableViaWWANOrWiFI
-{
+	<string>+ (BOOL)isNetworkReachableViaWWANOrWiFI{
+    
 	return (![[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == kNotReachable);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

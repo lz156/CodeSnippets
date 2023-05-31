@@ -9,8 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-UIImage *image         = [UIImage imageNamed:@""];
+	<string>UIImage *image         = [UIImage imageNamed:@""];
 UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
 imageView.contentMode  = UIViewContentModeScaleAspectFit;
 [self.view addSubview:imageView];</string>

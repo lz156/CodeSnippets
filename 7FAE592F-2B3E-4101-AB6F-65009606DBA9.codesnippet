@@ -3,29 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MCS_Image ResizeImage</string>
+	<string>MCS_resize_image</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (UIImage*)resizeImage:(UIImage *)image withNewSize:(CGSize)newSize
-{
+	<string>+ (UIImage*)resizeImage:(UIImage *)image withNewSize:(CGSize)newSize{
 
     UIImage *newImage = nil;
-	
-    if ((image.size.width == newSize.width) &amp;&amp; (image.size.height == newSize.height))
-    {
+    if ((image.size.width == newSize.width) &amp;&amp; (image.size.height == newSize.height)){
+        
         newImage = image;
     }
-    else
-    {
+    else{
+        
         UIGraphicsBeginImageContext(newSize);
         [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-		
         newImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
-        //NSData *jpeg = UIImageJPEGRepresentation(image, 0.8);
     }
     return newImage;
 }</string>
@@ -34,7 +30,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MCS_Image ResizeImage</string>
+	<string>MCS_resize_image</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>设置调整图片大小</string>
 	<key>IDECodeSnippetUserSnippet</key>

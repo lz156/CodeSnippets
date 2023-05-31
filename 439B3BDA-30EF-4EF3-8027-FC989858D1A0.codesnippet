@@ -9,12 +9,12 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
-    textView.backgroundColor = [UIColor whiteColor];
-    textView.delegate = self;
-    textView.showsVerticalScrollIndicator = NO;
-    textView.scrollEnabled = NO;
-    [self.view addSubview:textView];
+	<string>UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+textView.backgroundColor = [UIColor whiteColor];
+textView.delegate = self;
+textView.showsVerticalScrollIndicator = NO;
+textView.scrollEnabled = NO;
+[self.view addSubview:textView];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>439B3BDA-30EF-4EF3-8027-FC989858D1A0</string>

@@ -9,9 +9,8 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define ReuseIdentifier @""
-    UINib * nib = [UINib nibWithNibName:@"" bundle:nil];
-    [_tableView registerNib:nib forCellReuseIdentifier:ReuseIdentifier];</string>
+	<string>UINib * nib = [UINib nibWithNibName:@"" bundle:nil];
+[_tableView registerNib:nib forCellReuseIdentifier:@""];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>524E7A76-9BBC-4442-86F2-37DB97C7AC37</string>
 	<key>IDECodeSnippetLanguage</key>

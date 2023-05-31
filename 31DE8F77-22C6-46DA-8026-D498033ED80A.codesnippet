@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string></string>
+	<string>MCS_tableView_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.navigationItem.rightBarButtonItem = lazyBarButtonItem</string>
+	<string>let tableView = UITableView(frame: CGRect.zero, style: .plain);
+tableView.separatorStyle  = .none;
+tableView.backgroundColor = .clear;
+tableView.dataSource      = self;
+tableView.delegate        = self;
+tableView.contentInsetAdjustmentBehavior = .never;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A6C5C110-C6B9-4EDC-ACE5-6A0A8D960D10</string>
+	<string>31DE8F77-22C6-46DA-8026-D498033ED80A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>tableview 创建代码</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>MCS_tableView_swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
